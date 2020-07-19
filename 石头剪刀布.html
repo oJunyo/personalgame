@@ -34,7 +34,12 @@
 		height:auto;
 		position:absolute;
 	}
-	
+	.btnn{
+		width:6%;
+		height: auto;
+		position: absolute;
+		right: 20px;
+	}
 </style>
 </head>
 
@@ -48,27 +53,28 @@
 		<div class="zone" style="left:100px;top:300px"><img class="pic" id="左下" src="问号.png" alt="stone"></div>
 		<div class="zone" style="right:100px;top:300px"><img class="pic" onClick="change1()" id="右下" src="石头玩家下.png" alt="stone"></div>
 		<!--下面是右上角的三个按钮-->
-		<div class="0zone" style="width:6%;height: auto;position: absolute;right: 20px;top:70px">
+		<div class="btnn" style="top:70px">
 				<img id="greenstone0" src="石头logo.png" alt="stonelogo" onClick="green0()" style="border:3px solid black;border-radius:1000px"></div>
-		<div class="0zone" style="width:6%;height: auto;position: absolute;right: 20px;top:130px;">
+		<div class="btnn" style="top:130px;">
 				<img  id="bluescissor0" src="剪刀logo.png" alt="scissorlogo" onClick="blue0()"></div>
-		<div class="0zone" style="width:6%;height: auto;position: absolute;right: 20px;top:190px">
+		<div class="btnn" style="top:190px">
 				<img id="pinkcloth0" src="布logo.png" alt="clothlogo" onClick="pink0()"></div>
 		<!--下面是右下角的三个按钮-->
-		<div class="0zone" style="width:6%;height: auto;position: absolute;right: 20px;top:310px">
-				<img id="greenstone1" src="石头logo.png" alt="stonelogo" onClick="green1()" style="border:3px solid black;border-radius:1000px"></div>
-		<div class="0zone" style="width:6%;height: auto;position: absolute;right: 20px;top:370px;">
+		<div  class="btnn" style="top:310px">
+				<img id="greenstone1" src="石头logo.png" alt="stonelogo" onClick="green1()"></div>
+		<div class="btnn" style="top:370px;">
 				<img id="bluescissor1" src="剪刀logo.png" alt="scissorlogo" onClick="blue1()"></div>
-		<div class="0zone" style="width:6%;height: auto;position: absolute;right: 20px;top:430px">
+		<div class="btnn" style="top:430px">
 				<img id="pinkcloth1" src="布logo.png" alt="clothlogo" onClick="pink1()"></div>
-		<div style="position: absolute;width:12%;height:auto;top:260px;left:345px"><img id="vs" src="vs.png" alt="VS" style="width:100%;height:auto;"></div>
+		
+		<div style="position: absolute;width:12%;height:auto;top:260px;left:345px"><img id="vs" src="vs.png" alt="VS"></div>
 	</div>
 	<img id="wenzi" src="win.png" alt="lose" style="width:40%;position: absolute;left:230px;visibility:hidden">
 	<div id="reminder" style="position:absolute;left:310px;"></div>
 	<br><br>
 	 <!--下面是最底下的三个按钮-->
-	<img  id="CheckButton" name="btn" src="对手情况.png" alt="checkcomputerresult" style="width:18%;border:0px solid black;border-radius: 20px;box-shadow: -2px -2px black" onClick="computerresult()" onMouseDown="changeshadow0()" onMouseUp="returnshadow0()">
-	<img name="btn" src="重新开始.png" alt="restart" style="width:18%;margin-left:45px;border:0px solid black;border-radius: 20px;box-shadow: -2px -2px black" onClick="javascript:location.reload();" onMouseDown="changeshadow1()" onMouseUp="returnshadow1()">
+	<img class="bottombtn" id="CheckButton" name="btn" src="对手情况.png" alt="checkcomputerresult" style="width:18%;border:0px solid black;border-radius: 20px;box-shadow: -2px -2px black" onClick="computerresult()" onMouseDown="changeshadow0()" onMouseUp="returnshadow0()">
+	<img class="bottombtn" name="btn" src="重新开始.png" alt="restart" style="width:18%;margin-left:45px;border:0px solid black;border-radius: 20px;box-shadow: -2px -2px black" onClick="javascript:location.reload();" onMouseDown="changeshadow1()" onMouseUp="returnshadow1()">
 	
 </div>
 <div style="font-size:13px;line-height: 20px;margin-top:5px">游戏说明：请玩家严格按照以下步骤进行游戏<br>
